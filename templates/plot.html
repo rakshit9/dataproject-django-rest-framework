@@ -1,0 +1,254 @@
+
+
+
+{% extends "base.html" %}
+
+{% block content %}
+<div id="problem1">
+
+    <form id='firstform' class="formstyle">
+
+        <div class="row displaydata">
+
+            <div class="col s4">
+                <label for="favcity">CompanyType</label>
+                <select name="type" required>
+                    <option value="">Select CompanyType</option>
+                    <option value="Private">Private</option>
+                    <option value="Public">Public</option>
+                </select>
+            </div>
+            <div class="col s3">
+                <label for="favcity">Start Year</label>
+                <select name="year" required>
+                    <option value="">Select Year</option>
+                    <option value="1950">1950</option>
+                    <option value="1955">1955</option>
+                    <option value="1960">1960</option>
+                    <option value="1965">1965</option>
+                    <option value="1970">1970</option>
+                    <option value="1975">1975</option>
+                    <option value="1980">1980</option>
+                    <option value="1985">1985</option>
+                    <option value="1990">1990</option>
+                    <option value="1995">1995</option>
+                    <option value="2000">2000</option>
+                    <option value="2005">2005</option>
+                    <option value="2010">2010</option>        
+            </select>    
+            </div>
+            <div class="col s3">
+                <label for="favcity">Range</label>
+                    <select name="range" required>
+                        <option value="">Select Range</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>        
+            </div>
+
+            <div class="col s2">
+            <input type='submit' class="button" />
+            </div>
+        </div>
+    </form>
+
+    <div id="oneplot"></div>
+
+</div>
+
+<div id="problem2">
+
+    <form id='secondform' class="formstyle">
+        <div class="row displaydata">
+          
+            <div class="col s4">
+  
+                <label for="favcity">CompanyType</label>   
+                <select name="pba" required>
+                    <option value="">Select CompanyType</option>
+                    <option value="Agriculture and Allied Activities">Agriculture Activities</option>
+                    <option value="Business Services">Business Services</option>
+                    <option value="Manufacturing (Food stuffs)">Food stuffs Manufactur</option>
+                    <option value="Manufacturing (Others)">Others Manufacturing</option>                
+                    <option value="Trading">Trading</option>
+                    <option value="Others">Others</option>
+                </select>                
+            </div>
+            <div class="col s3">
+                <label for="favcity">Start Year</label>
+                <select name="startyear" required>
+                    <option value="">Select StartYear</option>
+                    <option value="1950">1950</option>
+                    <option value="1951">1951</option>
+                    <option value="1952">1952</option>
+                    <option value="1953">1953</option>
+                    <option value="1954">1954</option>
+                    <option value="1955">1955</option>
+                    <option value="1956">1956</option>
+                    <option value="1957">1957</option>
+                    <option value="1958">1958</option>
+                    <option value="1959">1959</option>
+                    <option value="1960">1960</option>                                        
+                </select>                
+            </div>
+            <div class="col s3">
+                <label for="favcity">End Year</label>
+                <select name="endyear" required>
+                    <option value="">Select EndYear</option>
+                    <option value="1970">1970</option>
+                    <option value="1971">1971</option>
+                    <option value="1972">1972</option>
+                    <option value="1973">1973</option>
+                    <option value="1974">1974</option>
+                    <option value="1975">1975</option>
+                    <option value="1976">1976</option>
+                    <option value="1977">1977</option>
+                    <option value="1978">1978</option>
+                    <option value="1979">1979</option>
+                    <option value="1980">1980</option>                
+                </select>          
+            </div>
+  
+            <div class="col s2">
+                <input type='submit' class="button"/>
+            </div>
+        </div>  
+    </form>            
+
+    <div id="company_register"></div>                
+
+</div>
+  
+  
+  
+  
+
+<div id="problem3">
+    <form id='thirdform' class="formstyle">
+      <div class="row displaydata">        
+          <div class="col s4">
+              <label for="favcity">Start Year</label>
+                  <select name="year" required>
+                      <option value="">Select Year</option>
+                      <option value="1950">1950</option>
+                      <option value="1955">1955</option>
+                      <option value="1960">1960</option>
+                      <option value="1965">1965</option>
+                      <option value="1970">1970</option>
+                      <option value="1975">1975</option>
+                      <option value="1980">1980</option>
+                      <option value="1985">1985</option>
+                      <option value="1990">1990</option>
+                      <option value="1995">1995</option>
+                      <option value="2000">2000</option>
+                      <option value="2005">2005</option>
+                      <option value="2010">2010</option>                      
+                  </select>                  
+          </div>
+          <div class="col s3">
+              <label for="favcity">Select Month</label>
+                  <select name="months" required>
+                      <option value="">Select Month</option>    
+                      <option value="3">3</option>
+                      <option value="6">6</option>            
+                      <option value="9">9</option>                
+                      <option value="12">12</option>                    
+                  </select>          
+          </div>
+          <div class="col s3">
+                <label for="favcity">Top Company</label>
+                <select name="top" required>
+                    <option value="">Select TopCompany</option>    
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>                    
+                </select>
+          </div>
+          <div class="col s2">
+              <input type='submit' class="button"/>
+          </div>
+      </div>
+    </form>              
+    <div id="number_of_company"></div>
+
+</div>
+    
+
+<div id="problem4">
+    
+    <form id='fourthform'  class="formstyle">
+    
+        <div class = "row displaydata">
+            <div class="col s4">
+                    <label for="favcity"> Select Business Activity </label> 
+                    <select class="js-example-basic-multiple selectfour" id="pba" multiple="multiple">
+                        <option value="" disabled selected>Choose your Activity</option>
+                        <option value="Business Services">Business Services</option>
+                        <option value="Community, personal & Social Services">Community, personal & Social Services</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Manufacturing (Food stuffs)">Manufacturing (Food stuffs)</option>
+                        <option value="Trading">Trading</option>
+                    </select>
+            
+            </div>            
+            <div class="col s3">
+                    <label for="favcity">Start Year</label>
+                    <select name="year" required>
+                        <option value="">Select Year</option>
+                        <option value="1950">1950</option>
+                        <option value="1955">1955</option>
+                        <option value="1960">1960</option>
+                        <option value="1965">1965</option>
+                        <option value="1970">1970</option>
+                        <option value="1975">1975</option>
+                        <option value="1980">1980</option>
+                        <option value="1985">1985</option>
+                        <option value="1990">1990</option>
+                        <option value="1995">1995</option>
+                        <option value="2000">2000</option>
+                        <option value="2005">2005</option>
+                        <option value="2010">2010</option>                
+                    </select>
+                </div>
+            <div class="col s3">        
+                <label for="favcity"> Range</label> 
+                <select name="range" required>
+                    <option value="">Select Range</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="col s2">
+                <input type='submit'class="button"/>
+            </div>
+        </div>
+
+    </form>               
+    <div id="stack_result"></div>
+</div>
+
+
+
+
+
+
+{% endblock content %}
